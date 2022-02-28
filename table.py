@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
     for key in dic:
         tmp = GetFinalPath(dic[key])
-        out += f'|{key[6:]}|[{tmp}](https://github.com/Mzying2001/DS-SZTU/blob/master/{tmp})|\n'
+        out += f'|{key[6:]}|[{tmp}](https://github.com/Mzying2001/DS-SZTU/blob/main/{tmp})|\n'
 
     fmd = open(md, 'w', encoding='utf-8')
     fmd.write(out)
