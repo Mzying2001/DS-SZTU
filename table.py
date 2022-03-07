@@ -3,10 +3,8 @@ import os
 
 def GetFiles(path: str, fileList: list):
     for root, dirs, files in os.walk(path):
-        for dir in dirs:
-            GetFiles(dir, fileList)
         for file in files:
-            fileList.append(f"{root}/{file}")
+            fileList.append(os.path.join(root, file))
 
 
 def Read2ndLine(file: str) -> str:
